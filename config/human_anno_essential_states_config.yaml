@@ -1,0 +1,6 @@
+udid: 127.0.0.1:6555 # udid of the device, check with `adb devices`
+os: Mac # OS of the device. Choose from {'Mac', 'Windows', 'Linux'}.
+
+save_dir: save_dir/human_anno_essential_states/
+
+tasks: tasks/tasks.json

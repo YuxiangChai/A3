@@ -1,0 +1,62 @@
+udid: 127.0.0.1:6555 # this is the default udid for Genymotion. Set to emulator-5554 for Android Virtual Device
+max_steps: 20 # maximum number of agent action steps
+save_dir: save_dir/
+
+# evaluation configuration
+eval_exp_name: ui-tars-7b-sft
+only_execution: True # whether to only execute the agent without evaluation (suggest to set to True, so that the evaluation is processed after all the tasks are executed)
+
+continue_execution: True # whether to continue execution from the last task
+
+# eval_essential_state: False
+# eval_essential_state_group_steps: 4 # number of steps to group for essential state
+# eval_essential_state_interval: 3 # interval to group steps for essential state
+# eval_modality_text: xml # choose between xml or ocr
+
+# eval_screenshot_som: False # whether to apply SoM on screenshots
+
+# log configuration
+log_dir: logs/
+
+# agent configuration
+agent:
+  name: ui_tars # should be the same as the name of the translator
+  # api key
+  sk: empty
+
+# task configuration
+tasks: ace/task_eval/
+essential_states_generation: True # whether to use GPT to generate essential states
+essential_states_generation_name: gpt
+essential_states_generation_model: gpt-4o-2024-11-20
+essential_states_generation_sk: sk-xxx
+
+# evaluator configuration
+# evaluators:
+#   - name: gpt
+#     model: gpt-4o-2024-11-20
+#     # api key
+#     sk: sk-xxx
+#   - name: gemini
+#     model: gemini-1.5-pro
+#     # api key
+#     sk: sk-xxx
+#   - name: claude
+#     model: claude-3-5-sonnet-20241022
+#     # api key
+#     sk: sk-xxx
+
+# screen recording
+screen_record: False # whether to record the screen during the execution
+record_resolution:
+  - 720 # width
+  - 1280 # height
+
+# state save
+state_save: True
+
+# history save
+history_save: True
+
+# results output
+result_save: True

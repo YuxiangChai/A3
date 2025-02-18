@@ -1,0 +1,41 @@
+# Static Evaluation Configuration
+eval_type: llm # choose from function or llm
+
+# Query answer judge by GPT. Comment out if eval_type is llm
+# answer_judge:
+#   model: gpt-4o-2024-11-20
+#   sk: sk-xxx
+
+eval_dir: save_dir/ui-tars-7b-sft/
+
+eval_essential_state: True # whether to evaluate essential states
+eval_essential_state_group_steps: 4 # number of steps to group for essential state
+eval_essential_state_interval: 3 # interval to group steps for essential state
+eval_modality_text: xml # choose between xml or ocr
+
+eval_screenshot_som: False # whether to apply SoM on screenshots
+
+log_dir: logs/
+
+essential_states_generation: True # whether to use GPT to generate essential states
+essential_states_generation_name: gpt
+essential_states_generation_model: o3-mini # gpt-4o-2024-11-20
+essential_states_generation_sk: sk-xxx
+essential_states_generation_base_url: https://aihubmix.com/v1 # base url for the API (default is https://api.openai.com/v1)
+
+evaluators:
+  - name: gpt
+    model: gpt-4o-2024-11-20
+    # api key
+    sk: sk-xxx
+    base_url: https://aihubmix.com/v1 # base url for the API (default is https://api.openai.com/v1)
+  - name: gemini
+    model: gemini-1.5-pro
+    # api key
+    sk: sk-xxx
+    base_url: https://aihubmix.com/v1 # base url for the API
+  - name: claude
+    model: claude-3-5-sonnet-20241022
+    # api key
+    sk: sk-xxx
+    base_url: https://aihubmix.com/v1 # base url for the API (default is https://api.anthropic.com/v1)

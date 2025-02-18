@@ -1,0 +1,6 @@
+Appium-Python-Client == 4.2.0
+openai
+anthropic
+pyyaml
+opencv-python
+easyocr
