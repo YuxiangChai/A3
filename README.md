@@ -1,6 +1,6 @@
 # A3: Android Agent Arena
 
-This is the official repo for Android Agent Arena (A3) [v1](https://arxiv.org/abs/2501.01149) (for now, the updated paper is at [v2](Android_Agent_Arena.pdf))
+This is the official repo for Android Agent Arena (A3) [paper](https://arxiv.org/abs/2501.01149)
 
 ## Environment Setup
 
