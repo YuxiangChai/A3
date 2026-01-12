@@ -1,6 +1,6 @@
 # A3: Android Agent Arena
 
-This is the official repo for Android Agent Arena (A3) [paper](https://arxiv.org/abs/2501.01149). We are updating the entire repo and soon, a new version of A3 and evaluators will be released with much easier setup and evaluator usage.
+_(Do not use this anymore) This is previously the official repo for Android Agent Arena (A3) [paper](https://arxiv.org/abs/2501.01149)._ **We have updated the entire benchmark including tasks, codebase and evaluation. The updated repo is named [Android Interactive Toolkit (AITK)](https://github.com/YuxiangChai/AITK)**
 
 ## Environment Setup
 
